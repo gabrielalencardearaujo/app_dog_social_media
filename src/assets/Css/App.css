@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+::root {
+  --type-fisrt-family: Helvetica, Arial, sans-serif;
+  --type-second-family: 'Spectral', Georgia;
+
+}
+
+body {
+  color: #333;
+  padding-top: 4rem;
+}
+
+h1, h2, h3, p {
+  color: #333;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-fisrt-family);
+  color: #333;
+}
+
+.container {
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
