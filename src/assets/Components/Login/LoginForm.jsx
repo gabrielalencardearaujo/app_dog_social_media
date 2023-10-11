@@ -11,8 +11,6 @@ function LoginForm() {
   const username = useForm();
   const password = useForm();
 
-  console.log(username)
-
   function handleSubmit(event) {
     event.preventDefault();
 
