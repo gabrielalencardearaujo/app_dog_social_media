@@ -5,17 +5,20 @@ import Header from './assets/Components/Header';
 import Footer from './assets/Components/Footer';
 import Home from './assets/Components/Home';
 import Login from './assets/Components/Login/Login';
+import { UserStorage } from './UserStorage';
 
 
 const App = () => {
   return <div>
     <BrowserRouter>
-      <Header />
+      <UserStorage>
+        <Header />
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/login/*' element={<Login />}></Route>
         </Routes>
-      <Footer />
+        <Footer />
+      </UserStorage>
     </BrowserRouter>
   </div>;
 };
