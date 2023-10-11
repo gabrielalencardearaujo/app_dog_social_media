@@ -36,8 +36,7 @@ export function UserStorage({ children }) {
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
       const responseToken = await fetch(url, options);
-
-      if(!responseToken.ok) throw new Error('Error: ' + responseToken.statusText);
+      if(!responseToken.ok) throw new Error('Error: Usuario ou senha invalidos.');
 
       const { token } = await responseToken.json();
 
