@@ -17,8 +17,7 @@ export function UserStorage({ children }) {
     setLoading(false);
     setError(null);
     window.localStorage.removeItem('token');
-    navigate('/login')
-  }, [navigate])
+  }, [])
 
   async function getUser(token) {
     const { url, options } = USER_GET(token)
