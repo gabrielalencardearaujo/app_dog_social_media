@@ -24,8 +24,6 @@ function UserPhotoPost() {
     event.preventDefault();
     const formData = new FormData();
     formData.append('img', img.raw);
-
-    //formData esta vazio. Nao sei porq.
     formData.append('nome', nome.value);
     formData.append('peso', peso.value);
     formData.append('idade', idade.value);
