@@ -47,6 +47,10 @@ button, input {
   margin: 0 auto;
 }
 
+.mainContainer {
+  margin-top: 4rem;
+}
+
 .title {
   font-size: var(--type-second-family);
   line-height: 1;
