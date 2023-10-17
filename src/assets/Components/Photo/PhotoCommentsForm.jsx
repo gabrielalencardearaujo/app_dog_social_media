@@ -3,6 +3,7 @@ import { ReactComponent as IconSend } from '../../img/enviar.svg';
 import useFetch from '../../Hooks/useFetch';
 import { COMMENT_POST } from '../../../api';
 import Error from '../Errors/Error';
+import styles from '../../Css/PhotoStyles/PhotoCommentsForm.module.css';
 
 function PhotoCommentsForm({id, setComments}) {
   const {request, error} = useFetch();
@@ -20,8 +21,9 @@ function PhotoCommentsForm({id, setComments}) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <textarea 
+        className={styles.textarea}
         name="comment" 
         id="comment" 
         placeholder='Faça um Comentário...'
@@ -29,7 +31,7 @@ function PhotoCommentsForm({id, setComments}) {
         onChange={({target}) => setComentario(target.value) } 
       />
 
-      <button>
+      <button className={styles.btn}>
         <IconSend />
       </button>
 
