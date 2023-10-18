@@ -21,8 +21,7 @@ function Login() {
           <Route path='/create' element={<LoginCreate />} />
           <Route path='/passwordLost' element={<LoginPasswordLost />} />
           <Route path='/passwordReset' element={<LoginPasswordReset />} />
-        <Route path='*' element={<NotFound404 />} />
-
+          <Route path='*' element={<NotFound404 />} />
         </Routes>
       </div>
     </section>
