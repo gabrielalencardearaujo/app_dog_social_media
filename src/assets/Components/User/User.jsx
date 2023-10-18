@@ -1,12 +1,12 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Feed from '../Feed/Feed'
-import UserHeader from './UserHeader'
-import UserPhotoPost from './UserPhotoPost'
-import UserStats from './UserStats'
-import { UserContext } from '../../../UserStorage'
-import NotFound404 from '../Errors/NotFound404'
-import Head from '../Errors/Head'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Feed from '../Feed/Feed';
+import UserHeader from './UserHeader';
+import UserPhotoPost from './UserPhotoPost';
+import { UserContext } from '../../../UserStorage';
+import NotFound404 from '../Errors/NotFound404';
+import Head from '../Errors/Head';
+import UserStats from './UserStats';
 
 function User() {
   const {data} = React.useContext(UserContext);

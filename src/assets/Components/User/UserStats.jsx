@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from '../Errors/Head';
-import { useFetcher, useFetchers } from 'react-router-dom';
 import useFetch from '../../Hooks/useFetch';
 import { STATS_GET } from '../../../api';
 import Loading from '../Errors/Loading';
@@ -36,4 +35,4 @@ function UserStats() {
     return null;
 }
 
-export default UserStats
+export default UserStats;
