@@ -5,6 +5,7 @@ import useForm from '../../Hooks/useForm';
 import useFetch from '../../Hooks/useFetch';
 import { PASSWORD_LOST } from '../../../api';
 import Error from '../Errors/Error';
+import Head from '../Errors/Head';
 
 
 function LoginPasswordLost() {
@@ -25,6 +26,8 @@ function LoginPasswordLost() {
 
   return (
     <section>
+      <Head title='Esqueceu a senha?' />
+
       <h1 className='title'>Perdeu a senha?</h1>
 
       {data ? (

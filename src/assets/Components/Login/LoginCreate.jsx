@@ -6,6 +6,7 @@ import { USER_POST } from '../../../api';
 import { UserContext } from '../../../UserStorage';
 import useFetch from '../../Hooks/useFetch';
 import Error from '../Errors/Error';
+import Head from '../Errors/Head';
 
 function LoginCreate() {
   const username = useForm();
@@ -31,6 +32,8 @@ function LoginCreate() {
 
   return (
     <section className='animeLeft'>
+      <Head title='Crie sua Conta' />
+
       <h1 className='title'>Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input type='text' label='Username' name='username' {...username} />

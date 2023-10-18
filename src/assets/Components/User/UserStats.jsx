@@ -1,8 +1,12 @@
 import React from 'react'
+import Head from '../Errors/Head'
 
 function UserStats() {
   return (
-    <div>UserStats</div>
+    <div>
+      <Head title='Estatisticas' />
+      UserStats
+    </div>
   )
 }
 
