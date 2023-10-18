@@ -41,7 +41,7 @@ function LoginPasswordReset() {
   }
 
   return (
-    <>
+    <section className='animeLeft'>
     <Head title='Reset senha' />
 
     <h1 className='title'>Resete sua senha.</h1>
@@ -57,8 +57,7 @@ function LoginPasswordReset() {
 
           <Error error={error} />
       </form>
-
-    </>
+    </section>
   )
 }
 
