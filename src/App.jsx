@@ -14,27 +14,27 @@ import NotFound404 from './assets/Components/Errors/NotFound404';
 
 
 const App = () => {
-  return <div>
+  return <div className='App'>
     <BrowserRouter>
       <UserStorage>
         <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='login/*' element={<Login />} />
+        <main className='AppBody'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='login/*' element={<Login />} />
+            <Route path='conta/*'
+              element={
+                <ProtectedRouter>
+                  <User />
+                </ProtectedRouter>
+              }
+            />
+            <Route path='photo/:id' element={<Photo />} />
+            <Route path='profile/:user' element={<UserProfile />} />
+            <Route path='*' element={<NotFound404 />} />
+          </Routes>
+        </main>
 
-          <Route path='conta/*' 
-            element={
-              <ProtectedRouter>
-                <User />
-              </ProtectedRouter>
-            } 
-          />
-
-        <Route path='photo/:id' element={<Photo />} />
-        <Route path='profile/:user' element={<UserProfile />} />
-        <Route path='*' element={<NotFound404 />} />
-
-        </Routes>
         <Footer />
       </UserStorage>
     </BrowserRouter>
