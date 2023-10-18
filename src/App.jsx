@@ -10,6 +10,7 @@ import User from './assets/Components/User/User';
 import ProtectedRouter from './assets/Components/Errors/ProtectedRouter';
 import Photo from './assets/Components/Photo/Photo';
 import UserProfile from './assets/Components/User/UserProfile';
+import NotFound404 from './assets/Components/Errors/NotFound404';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
 
         <Route path='photo/:id' element={<Photo />} />
         <Route path='profile/:user' element={<UserProfile />} />
+        <Route path='*' element={<NotFound404 />} />
 
         </Routes>
         <Footer />

@@ -5,6 +5,7 @@ import UserHeader from './UserHeader'
 import UserPhotoPost from './UserPhotoPost'
 import UserStats from './UserStats'
 import { UserContext } from '../../../UserStorage'
+import NotFound404 from '../Errors/NotFound404'
 
 function User() {
   const {data} = React.useContext(UserContext);
@@ -16,6 +17,7 @@ function User() {
         <Route path='/' element={<Feed user={data.id} />} />
         <Route path='userPost' element={<UserPhotoPost />} />
         <Route path='userStats' element={<UserStats />} />
+        <Route path='*' element={<NotFound404 />} />
 
       </Routes>
     </section>
